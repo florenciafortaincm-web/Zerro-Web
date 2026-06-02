@@ -4,305 +4,314 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZERRO Aberturas · Carpintería de Aluminio a Medida</title>
-  <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- CSS Personalizado -->
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body id="top">
+<body>
 
-  <!-- ===================== 1. NAVBAR ===================== -->
-  <header class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#top" data-scroll>
-        <img class="nav__logo nav__logo--light" src="assets/logo_02.png" alt="ZERRO Aberturas">
-        <img class="nav__logo nav__logo--dark" src="assets/logo_carp.png" alt="ZERRO Aberturas">
+  <header class="navbar" id="headerNav">
+    <div class="nav-container">
+      <a href="#top" class="nav-logo">
+        <img src="assets/logo_02.png" alt="ZERRO Aberturas">
       </a>
-      <div class="nav__spacer"></div>
-      <nav class="nav__links">
-        <div class="nav__item">
-          <button class="nav__toggle" type="button" aria-haspopup="true">Líneas
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <div class="nav__dropdown">
-            <a href="#modena" data-scroll>Modena</a>
-            <a href="#modena2" data-scroll>Modena 2</a>
-            <a href="#a30" data-scroll>A30</a>
-            <a href="#herrero" data-scroll>Herrero</a>
-            <a href="#mass" data-scroll>Línea Mass</a>
-            <a href="#masr60" data-scroll>Mass R60</a>
+      
+      <nav class="nav-links">
+        <div class="nav-dropdown">
+          <span class="nav-link">Líneas ▾</span>
+          <div class="dropdown-menu">
+            <a href="#lineas">Modena / M2</a>
+            <a href="#lineas">A30 New</a>
+            <a href="#lineas">Línea Herrero</a>
+            <a href="#lineas">Sistemas Mass</a>
           </div>
         </div>
-        <a href="#nosotros" data-scroll>Nosotros</a>
-        <a href="#contacto" data-scroll class="btn btn--primary btn--sm">Pedí tu presupuesto</a>
-      </nav>
-      <button class="nav__burger" id="burger" aria-label="Abrir menú">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
-      <div class="nav__mobile" id="navMobile">
-        <a href="#productos" data-scroll>Líneas</a>
-        <div class="nav__mobile-sub">
-          <a href="#modena" data-scroll>Modena</a>
-          <a href="#modena2" data-scroll>Modena 2</a>
-          <a href="#a30" data-scroll>A30</a>
-          <a href="#herrero" data-scroll>Herrero</a>
-          <a href="#mass" data-scroll>Línea Mass</a>
-          <a href="#masr60" data-scroll>Mass R60</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+        <div class="nav-cta">
+          <a href="#contacto" class="btn-primary">Pedí tu presupuesto</a>
         </div>
-        <a href="#nosotros" data-scroll>Nosotros</a>
-        <a href="#contacto" data-scroll>Contacto</a>
-        <a href="#contacto" data-scroll class="btn btn--primary">Pedí tu presupuesto</a>
-      </div>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#lineas">Líneas de Aberturas</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto" class="btn-primary">Pedí tu presupuesto</a>
     </div>
   </header>
 
-  <!-- ===================== 2. HERO ===================== -->
-  <section class="hero">
-    <div class="hero__bg">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" alt="Aberturas de aluminio premium">
-    </div>
-    <div class="container hero__container">
-      <p class="eyebrow eyebrow--light">FÁBRICA DIRECTA</p>
-      <h1 class="hero__title">Aberturas de aluminio de alta gama diseñadas para resistir</h1>
-      <p class="hero__lead">Fabricación e instalación 100% a medida. Máximo aislamiento térmico, acústico y hermeticidad para tu hogar o proyecto arquitectónico.</p>
-      <div class="hero__actions">
-        <a href="#contacto" data-scroll class="btn btn--primary">Cotizar aberturas</a>
-        <a href="#productos" data-scroll class="btn btn--secondary">Ver catálogo</a>
+  <section class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Fábrica Directa · La Plata</p>
+      <h1 class="hero-title">ABERTURAS DE ALUMINIO DE ALTA GAMA</h1>
+      <p class="hero-subtitle">Fabricación e instalación 100% a medida. Máximo aislamiento térmico, acústico y hermeticidad para tu hogar o proyecto arquitectónico.</p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn-primary">Cotizar Cerramientos</a>
+        <a href="#lineas" class="btn-outline">Ver Catálogo Técnico</a>
       </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroleá</span>
+      <div class="scroll-line"></div>
     </div>
   </section>
 
-  <!-- ===================== 3. PRODUCTOS / PESTAÑAS ===================== -->
-  <section class="section" id="productos">
+  <section class="nosotros" id="nosotros">
     <div class="container">
-      <div class="section__head">
-        <p class="eyebrow">Catálogo Técnico</p>
-        <h2 class="display">Líneas de producción que se adaptan a cada necesidad</h2>
-      </div>
+      <span class="section-tag">Nuestra Empresa</span>
+      <h2 class="section-title">COMPROMISO TOTAL CON LA PRECISIÓN</h2>
+      <p class="section-subtitle">En ZERRO Aberturas entendemos que cada ventana es una pieza clave en el confort de tu hogar. Más de 15 años brindando soluciones estructurales.</p>
       
-      <!-- Tabs Navigation -->
-      <div class="tabs">
-        <button class="tabs__btn is-active" data-tab="modena">Modena / M2</button>
-        <button class="tabs__btn" data-tab="a30">A30 (Alta Gama)</button>
-        <button class="tabs__btn" data-tab="herrero">Herrero (Estándar)</button>
-        <button class="tabs__btn" data-tab="mass">Línea Mass</button>
-      </div>
-
-      <!-- Tabs Content -->
-      <div class="tabs__content is-active" id="tab-modena">
-        <div class="grid grid--2">
-          <div>
-            <h3>Modena & Modena 2</h3>
-            <p>El estándar de oro en el mercado argentino. Una línea equilibrada que ofrece excelente hermeticidad y diseño estético sin elevar los costos de obra.</p>
-            <ul style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; padding-left: 1.25rem;">
-              <li>Indicado para viviendas residenciales y edificios de mediana altura.</li>
-              <li>Admite vidrio simple o doble vidriado hermético (DVH) hasta 17 mm.</li>
-              <li>Cierre central hermético y accesorios de alta durabilidad.</li>
-            </ul>
-            <a href="#modena" data-scroll class="btn btn--secondary btn--sm" style="margin-top: 2rem;">Ver fichas técnicas</a>
-          </div>
-          <div>
-            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Línea Modena" style="border-radius: var(--radius-lg); width: 100%; height: 350px; object-fit: cover;">
-          </div>
+      <div class="nosotros-grid">
+        <div class="nosotros-card">
+          <h2>Tecnología de Corte</h2>
+          <p>Contamos con maquinaria de alta fidelidad para asegurar que cada perfil de aluminio encaje de manera milimétrica, garantizando un armado robusto y duradero.</p>
         </div>
-      </div>
-
-      <div class="tabs__content" id="tab-a30">
-        <div class="grid grid--2">
-          <div>
-            <h3>A30 New</h3>
-            <p>La línea elegida por arquitectos para proyectos exigentes. Perfiles de gran sección que permiten aberturas de gran tamaño con movimientos suaves y precisos.</p>
-            <ul style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; padding-left: 1.25rem;">
-              <li>Ideal para aberturas de piso a techo y grandes paños fijos.</li>
-              <li>Excelente respuesta a la presión del viento y cargas estructurales.</li>
-              <li>Estética de líneas rectas y limpias muy demandada en arquitectura moderna.</li>
-            </ul>
-            <a href="#a30" data-scroll class="btn btn--secondary btn--sm" style="margin-top: 2rem;">Ver ficha A30</a>
-          </div>
-          <div>
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Línea A30" style="border-radius: var(--radius-lg); width: 100%; height: 350px; object-fit: cover;">
-          </div>
-        </div>
-      </div>
-
-      <div class="tabs__content" id="tab-herrero">
-        <div class="grid grid--2">
-          <div>
-            <h3>Línea Herrero</h3>
-            <p>La solución tradicional y más económica. Un sistema de perfiles livianos diseñado para dar respuesta a cerramientos básicos manteniendo una relación costo-beneficio imbatible.</p>
-            <ul style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; padding-left: 1.25rem;">
-              <li>Recomendado para reformas económicas o aberturas interiores.</li>
-              <li>Mecánica simple de fácil mantenimiento.</li>
-              <li>Opciones en vidrio entero o repartido según diseño.</li>
-            </ul>
-            <a href="#herrero" data-scroll class="btn btn--secondary btn--sm" style="margin-top: 2rem;">Ver ficha Herrero</a>
-          </div>
-          <div>
-            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="Línea Herrero" style="border-radius: var(--radius-lg); width: 100%; height: 350px; object-fit: cover;">
-          </div>
-        </div>
-      </div>
-
-      <div class="tabs__content" id="tab-mass">
-        <div class="grid grid--2">
-          <div>
-            <h3>Línea Mass & R60</h3>
-            <p>Sistemas premium de alta gama orientados al confort térmico y acústico absoluto. Diseñados para un sellado perfecto contra factores climáticos adversos.</p>
-            <ul style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; padding-left: 1.25rem;">
-              <li>Garantiza el mayor índice de aislamiento acústico de la categoría.</li>
-              <li>Perfiles pesados que transmiten robustez y seguridad al tacto.</li>
-              <li>Compatible con herrajes multipunto de seguridad avanzada.</li>
-            </ul>
-            <a href="#mass" data-scroll class="btn btn--secondary btn--sm" style="margin-top: 2rem;">Ver detalles Mass</a>
-          </div>
-          <div>
-            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="Línea Mass" style="border-radius: var(--radius-lg); width: 100%; height: 350px; object-fit: cover;">
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===================== 4. SECCIONES DE DETALLE DE PRODUCTOS ===================== -->
-  <section class="detail" id="modena">
-    <div class="container grid grid--2">
-      <div>
-        <span class="eyebrow">Clásica y Confiable</span>
-        <h2 class="display">Línea Modena</h2>
-        <p>La carpintería Modena permite armar aberturas de excelente hermeticidad y solidez estructural sin elevar los costos. Gracias a su diseño curvo o recto, se integra con naturalidad en cualquier fachada residencial o comercial.</p>
-        <div class="detail__specs">
-          <div class="spec-card"><h4>Vidrio</h4><p>Simple o DVH hasta 17mm</p></div>
-          <div class="spec-card"><h4>Tipología</h4><p>Corrediza, de abrir, oscilobatiente</p></div>
-        </div>
-      </div>
-      <div class="detail__image"></div>
-    </div>
-  </section>
-
-  <section class="detail detail--reverse" id="modena2">
-    <div class="container grid grid--2">
-      <div>
-        <span class="eyebrow">Evolución del Diseño</span>
-        <h2 class="display">Línea Modena 2</h2>
-        <p>Manteniendo las virtudes de su antecesora, Modena 2 refina sus líneas y optimiza el peso de los perfiles para lograr un deslizamiento más liviano y una estética totalmente limpia, ideal para modernizaciones de viviendas.</p>
-        <div class="detail__specs">
-          <div class="spec-card"><h4>Cierres</h4><p>Laterales o centrales embutidos</p></div>
-          <div class="spec-card"><h4>Estética</h4><p>Bordes rectos minimalistas</p></div>
-        </div>
-      </div>
-      <div class="detail__image"></div>
-    </div>
-  </section>
-
-  <section class="detail" id="a30">
-    <div class="container grid grid--2">
-      <div>
-        <span class="eyebrow">Alta Gama Arquitectónica</span>
-        <h2 class="display">Línea A30 New</h2>
-        <p>Diseñada para soportar grandes cargas de viento y albergar cristales de gran espesor. A30 es el sistema definitivo para obras de arquitectura contemporánea con ventanales de gran porte que integran el interior con el paisaje exterior.</p>
-        <div class="detail__specs">
-          <div class="spec-card"><h4>Capacidad</h4><p>Paños fijos de gran tamaño</p></div>
-          <div class="spec-card"><h4>DVH</h4><p>Cámaras de aire optimizadas</p></div>
-        </div>
-      </div>
-      <div class="detail__image"></div>
-    </div>
-  </section>
-
-  <section class="detail detail--reverse" id="herrero">
-    <div class="container grid grid--2">
-      <div>
-        <span class="eyebrow">Funcional y Accesible</span>
-        <h2 class="display">Línea Herrero</h2>
-        <p>Un clásico indiscutido para presupuestos ajustados. Brinda respuestas prácticas a las necesidades básicas de cerramiento en depósitos, ampliaciones o reformas rápidas con perfiles livianos y herrajes estándares sencillos.</p>
-        <div class="detail__specs">
-          <div class="spec-card"><h4>Inversión</h4><p>Altamente económica</p></div>
-          <div class="spec-card"><h4>Armado</h4><p>Corte a 90 grados tradicional</p></div>
-        </div>
-      </div>
-      <div class="detail__image"></div>
-    </div>
-  </section>
-
-  <section class="detail" id="mass">
-    <div class="container grid grid--2">
-      <div>
-        <span class="eyebrow">Confort Térmico</span>
-        <h2 class="display">Línea Mass</h2>
-        <p>Un sistema de prestación superior con un diseño exclusivo que prioriza la ruptura de puente térmico y el aislamiento acústico de nivel superior. Sentí la solidez y el silencio absoluto en el interior de tu casa.</p>
-        <div class="detail__specs">
-          <div class="spec-card"><h4>Hermeticidad</h4><p>Cierre por triple contacto</p></div>
-          <div class="spec-card"><h4>Seguridad</h4><p>Anclajes reforzados</p></div>
-        </div>
-      </div>
-      <div class="detail__image"></div>
-    </div>
-  </section>
-
-  <section class="detail detail--reverse" id="masr60">
-    <div class="container grid grid--2">
-      <div>
-        <span class="eyebrow">Máxima Prestación</span>
-        <h2 class="display">Línea Mass R60</h2>
-        <p>La variante más robusta del sistema Mass. Diseñada con perfiles estructurales de alta resistencia ideales para zonas climáticas complejas y fachadas comerciales expuestas a uso continuo e intensivo.</p>
-        <div class="detail__specs">
-          <div class="spec-card"><h4>Uso</h4><p>Residencial Premium / Comercial</p></div>
-          <div class="spec-card"><h4>Perfil</h4><p>Espesor estructural máximo</p></div>
-        </div>
-      </div>
-      <div class="detail__image"></div>
-    </div>
-  </section>
-
-  <!-- ===================== 5. NOSOTROS ===================== -->
-  <section class="about section" id="nosotros">
-    <div class="container grid grid--2" style="align-items: center;">
-      <div>
-        <p class="eyebrow">Nuestra Fábrica</p>
-        <h2 class="display text-white">Compromiso total con la precisión milimétrica</h2>
-        <p style="color: #94a3b8; margin-top: 1.5rem; font-size: 1.125rem;">En ZERRO Aberturas entendemos que cada ventana es una pieza clave en el confort térmico de tu hogar. Contamos con tecnología de corte de alta precisión y un equipo técnico capacitado para asegurar que cada perfil encaje a la perfección.</p>
-      </div>
-      <div class="grid grid--2" style="gap: 1.5rem;">
-        <div style="background: rgba(255,255,255,0.03); padding: 2.5rem; border-radius: var(--radius-xl); border: 1px solid rgba(255,255,255,0.05);">
-          <h3 class="text-white" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">100%</h3>
-          <p style="color: #94a3b8; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em;">A medida</p>
-        </div>
-        <div style="background: rgba(255,255,255,0.03); padding: 2.5rem; border-radius: var(--radius-xl); border: 1px solid rgba(255,255,255,0.05);">
-          <h3 class="text-white" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">DVH</h3>
-          <p style="color: #94a3b8; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em;">Eficiencia Energética</p>
+        <div class="nosotros-card">
+          <h2>Asesoramiento en Obra</h2>
+          <p>Te acompañamos desde la toma de medidas en el lugar hasta la colocación final, recomendando las mejores tipologías de vidrios simples o Doble Vidriado Hermético (DVH).</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== 6. CONTACTO ===================== -->
-  <section class="contact section" id="contacto">
+  <section class="materiales">
+    <div class="materiales-overlay"></div>
+    <div class="container materiales-content">
+      <h2>MATERIALES CERTIFICADOS AlUAR</h2>
+      <div class="materiales-box">
+        <p>Trabajamos exclusivamente con matrices originales y accesorios de primera línea. Esto asegura que los rodamientos, felpas y cierres laterales resistan el paso del tiempo sin perder suavidad ni hermeticidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lineas" id="lineas">
     <div class="container">
-      <div class="contact__head">
-        <p class="eyebrow" style="display:inline-block">Contacto</p>
-        <h2 class="display">Nuestros representantes comerciales le brindarán un asesoramiento integral y sin cargo</h2>
-      </div>
-      <div class="contact__grid">
-        <div>
-          <div class="contact__brand">
-            <img src="assets/logo_02.png" alt="ZERRO Aberturas">
-            <p>Carpintería de aluminio · Fabricación 100% a medida en La Plata y zona.</p>
-          </div>
-          <div class="contact__info">
-            <!-- Detalles de contacto -->
+      <span class="section-tag">Sistemas de Carpintería</span>
+      <h2 class="section-title">NUESTRAS LÍNEAS DE PRODUCCIÓN</h2>
+      <p class="section-subtitle">Diferentes niveles de prestación que se ajustan a las exigencias arquitectónicas y de presupuesto de tu proyecto.</p>
+
+      <div class="lineas-grid">
+        <div class="linea-card">
+          <div class="linea-img" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80');"></div>
+          <div class="linea-body">
+            <h3>MODENA / MODENA 2</h3>
+            <p>El estándar más elegido del mercado. Equilibrio perfecto entre estética moderna, óptima hermeticidad y costo competitivo.</p>
+            <ul class="linea-specs">
+              <li>Admite Vidrio Simple o DVH hasta 17 mm</li>
+              <li>Tipologías corredizas, de abrir y paños fijos</li>
+              <li>Excelente hermeticidad por sistema de felpas</li>
+            </ul>
           </div>
         </div>
-        <div class="map">
-          <iframe title="Ubicación ZERRO Aberturas" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.+72+522,+La+Plata,+Buenos+Aires&output=embed" style="border:0;"></iframe>
+
+        <div class="linea-card">
+          <div class="linea-img" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80');"></div>
+          <div class="linea-body">
+            <h3>A30 NEW (ALTA GAMA)</h3>
+            <p>Diseñada para grandes luces y ventanales de piso a techo. Aporta máxima resistencia estructural frente a presiones de viento.</p>
+            <ul class="linea-specs">
+              <li>Perfiles pesados de gran sección y diseño recto</li>
+              <li>Ideal para imponentes paños fijos y corredizas</li>
+              <li>Cierres multipunto para mayor seguridad</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="linea-card">
+          <div class="linea-img" style="background-image: url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80');"></div>
+          <div class="linea-body">
+            <h3>HERRERO & MASS PREMIUM</h3>
+            <p>Desde opciones tradicionales muy económicas hasta sistemas Mass orientados al confort acústico absoluto y ruptura de puente térmico.</p>
+            <ul class="linea-specs">
+              <li>Línea Herrero: cerramientos básicos y económicos</li>
+              <li>Sistemas Mass: hermeticidad por triple contacto</li>
+              <li>Aislamiento acústico de nivel superior</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- JavaScript -->
-  <script src="site.js"></script>
+  <section class="porque">
+    <div class="container">
+      <div class="porque-grid">
+        <div class="porque-item">
+          <div class="porque-icon">📐</div>
+          <div>
+            <h3>Fabricación a Medida</h3>
+            <p>Adaptamos cada estructura de aluminio a los vanos reales de tu obra para evitar filtraciones de aire y asegurar un calce perfecto.</p>
+          </div>
+        </div>
+        <div class="porque-item">
+          <div class="porque-icon">⚡</div>
+          <div>
+            <h3>Ahorro Energético</h3>
+            <p>Nuestras instalaciones con DVH reducen notablemente el uso de climatización artificial, conservando la temperatura interior.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <div class="contacto-header">
+        <h2>SOLICITÁ UN PRESUPUESTO SIN CARGO</h2>
+        <p>Envianos las medidas estimadas de tus aberturas y un asesor comercial te responderá a la brevedad.</p>
+      </div>
+
+      <div class="contacto-grid">
+        <div class="contacto-form-wrap">
+          <h3>Formulario de Cotización</h3>
+          <form action="#" method="POST" id="presupuestoForm">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Ej: Florencia Fortain">
+            </div>
+            <div class="form-group">
+              <label for="whatsapp">Teléfono / WhatsApp</label>
+              <input type="tel" id="whatsapp" name="whatsapp" required placeholder="Ej: 221 XXXXXXX">
+            </div>
+            <div class="form-group">
+              <label for="linea">Línea de Interés</label>
+              <select id="linea" name="linea">
+                <option value="modena">Modena / Modena 2</option>
+                <option value="a30">A30 New (Alta Gama)</option>
+                <option value="herrero">Herrero (Económica)</option>
+                <option value="mass">Línea Mass Premium</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Detalle de las aberturas (Medidas / Cantidad)</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Ej: 2 corredizas de 1.50x1.10 en Modena con DVH..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">Enviar Solicitud</button>
+            <div class="form-success" id="successMsg">¡Formulario enviado! Nos contactaremos pronto.</div>
+          </form>
+        </div>
+
+        <div class="contacto-info-wrap">
+          <div class="contacto-info">
+            <div class="info-items">
+              <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                  <strong>Fábrica y Showroom</strong>
+                  <span>La Plata, Provincia de Buenos Aires</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">📞</span>
+                <div>
+                  <strong>Teléfono Comercial</strong>
+                  <span>0221 304-7332</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">✉️</span>
+                <div>
+                  <strong>Correo Electrónico</strong>
+                  <a href="mailto:info@zerroaberturas.com.ar">info@zerroaberturas.com.ar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mapa-wrap">
+            <iframe title="Ubicación ZERRO" src="https://www.google.com/maps?q=Av.+72+522,+La+Plata,+Buenos+Aires&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 style="color:white; margin-bottom:10px;">ZERRO Aberturas</h3>
+          <p>Carpintería de aluminio de alta gama y prestaciones superiores.</p>
+          <a href="https://wa.me/542213047332" class="btn-whatsapp-footer" target="_blank">
+            <span>Chatear por WhatsApp</span>
+          </a>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <a href="#top">Inicio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#lineas">Líneas</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-links">
+          <h4>Horarios</h4>
+          <span>Lunes a Viernes: 8:00 a 17:00 hs</span>
+          <span>Sábados: 9:00 a 13:00 hs</span>
+        </div>
+        <div class="footer-social">
+          <h4>Seguinos</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ZERRO Aberturas. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/542213047332" class="whatsapp-float" target="_blank">
+    <span>¿Necesitás una cotización?</span> 💬
+  </a>
+
+  <script>
+    // Menú Hamburguesa Móvil
+    const burgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    if (burgerBtn && mobileMenu) {
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+      });
+      // Cerrar menú al hacer clic en un enlace móvil
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+      });
+    }
+
+    // Cambiar fondo de Navbar al hacer Scroll
+    window.addEventListener('scroll', () => {
+      const headerNav = document.getElementById('headerNav');
+      if (window.scrollY > 50) {
+        headerNav.classList.add('scrolled');
+      } else {
+        headerNav.classList.remove('scrolled');
+      }
+    });
+
+    // Envío simulado de formulario
+    const form = document.getElementById('presupuestoForm');
+    const successMsg = document.getElementById('successMsg');
+    if (form && successMsg) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        successMsg.style.display = 'block';
+        form.reset();
+      });
+    }
+  </script>
 </body>
 </html>
